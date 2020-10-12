@@ -11,23 +11,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        >
 
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/nombre_pokeTxt"
-            android:textSize="50dp"
-            android:layout_weight="1"
-            android:layout_marginTop="50dp"
-            android:gravity="center"
+            android:id="@+id/numero_y_nombre_pokeTxt"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+
             ></TextView>
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:id="@+id/tipo_poke_iv"
-            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+
+
             ></ImageView>
 
     </LinearLayout>
@@ -35,14 +40,20 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imagen_pokemon"
+        android:id="@+id/pokemon_imagen"
         android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+
 
         >
         </ImageView>
     <TextView
+        android:id="@+id/descPokeTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""
-        android:layout_marginTop="10dp"></TextView>
+        android:layout_marginTop="10dp"
+        android:textStyle="italic"
+        android:textSize="14dp"
+        android:padding="10dp"
+        android:layout_margin="15dp"></TextView>
 </LinearLayout>
